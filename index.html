@@ -172,28 +172,51 @@ let data = [];
 let used = [];
 let current = null;
 
-// Load data
+// ✅ LOAD DATA ROBUSTE
 fetch('data_inputs.txt')
 .then(r => r.text())
 .then(text => {
-    data = text.split('\n').slice(1).map(l => {
-        let p = l.split(';');
-        return { theme:p[0], enigme:p[1], indice:p[2], reponse:p[3] };
-    });
 
-    loadHistory();
+    data = text
+        .split('\n')
+        .slice(1)
+        .map(l => l.trim())               // nettoie
+        .filter(l => l.length > 0)        // enlève lignes vides
+        .map(l => {
+            let p = l.split(';');
+
+            // protection si ligne cassée
+            if (p.length < 4) return null;
+
+            return {
+                theme: p[0].trim(),
+                enigme: p[1].trim(),
+                indice: p[2].trim(),
+                reponse: p[3].replace('\r','').trim()
+            };
+        })
+        .filter(x => x !== null);
+
+    console.log("✅ Data chargée :", data.length);
 });
 
-// NEW QUESTION
+// ✅ NOUVELLE ENIGME
 function nouvelleEnigme(){
+
+    if(data.length === 0){
+        alert("Données non chargées !");
+        return;
+    }
+
     if(used.length === data.length){
         alert("Plus d'énigmes !");
         return;
     }
 
     let i;
-    do { i = Math.floor(Math.random()*data.length); }
-    while(used.includes(i));
+    do {
+        i = Math.floor(Math.random() * data.length);
+    } while (used.includes(i));
 
     used.push(i);
     current = data[i];
@@ -204,12 +227,20 @@ function nouvelleEnigme(){
     resetInfo();
 }
 
+// ✅ FIX : fonction manquante
+function resetInfo(){
+    indice.innerText = "";
+    reponse.innerText = "";
+}
+
+// ✅ INDICE
 function showIndice(){
     if(current){
         indice.innerText = "🔍 " + current.indice;
     }
 }
 
+// ✅ REPONSE
 function showReponse(){
     if(current){
         reponse.innerText = "✅ " + current.reponse;
@@ -217,6 +248,7 @@ function showReponse(){
     }
 }
 
+// ✅ HISTORIQUE
 function addHistory(item){
     let row = historyTable.querySelector("tbody").insertRow();
     row.insertCell(0).innerText = item.theme;
