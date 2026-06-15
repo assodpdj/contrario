@@ -1,0 +1,124 @@
+Theme;Enigme;Indice;Réponse
+Chanson;Le mauvais de l’abbé;Annie Cordy;La bonne du curé
+Chanson;La haine c'est tel un cigare;Sylvie Vartan;L’amour c’est comme une cigarette
+Chanson;Poumon de Hyene;Philippe Lafontaine;Cœur de Loup
+Chanson;Nous courrons ensemble;JJ Goldman;Je marche seul
+Chanson;Non papa Non;France Gall;Si maman si
+Chanson;Diner en guerre;Stephane Echer;Dejeuner en paix
+Chanson;Lever le pantalon;Zebda;Tomber la chemise
+Chanson;La montagneuse contrée;Jacques Brel;Le plat pays
+Chanson;Adam couche-moi;Julie Pietri;Eve lève toi
+Chanson;Bien moins loin des planètes;Gold;Un peu plus près des étoiles
+Film avec chanteuse;Mariage noir;Vanessa Paradis;Noce blanche
+Chanson;Sans la période;Léo Ferré;Avec le temps
+Chanson;Réalise tel le volatile;Michel Fugain;Fais comme l'oiseau
+Chanson;Atteris-moi;JJ Goldman;Envole moi
+Chanson;Le dieu des vieux;Johnny Hallyday;L'idole des jeunes
+Ca fait du bruit;Un vase d'evasion;automobile;Un pot d'echappement
+Chanson;La mort par présence;JJ Goldman;La vie par procuration
+Chanson;Tu le détestes à en vivre;Francis Cabrel;Je l'aime a mourir
+Chanson;Tu es du mauvais café;Dans ma tabatière;J'ai du bon tabac
+Chanson;Naître d'adorer;Charles Aznavour;Mourir d'aimer
+Chanson;Nous viendrons seuls en enfer;Michel Polnareff;On ira tous au paradis
+Chanson;Le gars de l'auberge;Eddy Mitchell;La fille du motel
+Chanson;Ton tourniquet a toi;Edit Piaf;Mon manège a moi
+Chanson;Sur la sombre source;pour enfants;A la claire fontaine
+Chanson;Sortir de l'ombre;Patricia Kass;Entrer dans la lumière
+Chanson;Chanter dans la vallée;Joe Dasin;Siffler sur la colline
+Chanson;Tu detestes mater les mecs;Patrick Coutin;J'aime regarder les filles
+Chanson;Tu me jures;Johnny Hallyday;Je te promets
+Chanson;Les papiers volants;Yves Montand;Les feuilles mortes
+Chanson;Au commencement de tes illusions;JJ Goldman;Au bout de mes rêves
+Chanson;La vilaine volga noire;Valse;Le beau danube bleu
+Chanson;Si j'avais une femme;Diane Tell;Si j'étais un homme
+Média;Pleu et Musiques;Radio;Rire et Chansons
+Chanson;Tramontane perdante;Renaud;Mistral gagnant
+Chanson;Maman musicienne;Jean-Luc Lahaye;Papa chanteur
+Chanson;Pourquoi te dire bonjour;Francoise Hardy;Comment te dire adieu
+Chanson;Sur les géôles de Rennes;Yavait un prisonnier;Dans les prisons de Nantes
+Chanson;Les pupilles fusil;Marc Lavoine;Les yeux revolver
+Chanson;L'étang mineur;Mort Shuman;le lac majeur
+Chanson;Soustrais la nuit;Johnny Hallyday;Retiens la nuit
+Groupe;Blanche Envie;Alternatif;Noir Désir
+Comédie musicale;Le Prince Lune;Kamel Ouali;Le roi soleil
+Chanson;Lorsque nous ne possédons que la haine;Jacques Brel;Quand on n'a que l'amour
+Chanson;Papa les grands navire;pour enfants;Maman les petits bateaux
+Chanson;Si nous parlions;Julien Clerc;Si on chantait
+Chanson;Cindy Boy;Aqua;Barbie Girl
+Chanteuse;Lors Sénile;Américaine;Lady gaga
+Chanson;Je ne sais quoi d'Oregon;Johnny Hallyday;Quelque chose de Tennessee
+Chanson;Le rock au cent périodes;Jacques Brel;La valse a mille temps
+Cinema;Le devoir d'orgue;Palme d'or;La lecon de piano
+Chanson;J'écoute chanter le bus;Richard Anthony;J'entends siffler le train
+Chanson;Il a plu sur tomorrow;Marie Laforet;Il a neigé sur yesterday
+Dessin animé;Les ecuyers de l'horoscope;Bernard Minet;Les chevaliers du Zodiaque
+Chanson;Les fiancés des chaises privées;Georges Brassens;Les amoureux des bancs publics
+Chanson;La fan du guitariste;Michel Berger;La groupie du pianiste
+Chanson;Station au macaque;Georges Brassens;Gare au gorille
+Chanson;Avec copie;Mylene Farmer;Sans contrfacon
+Chanson;Il neige Il neige Fermier;pour enfants;Il pleut Il pleut Bergère
+Chanson;Il désirait s'amuser au bistrot;Patricia Kass;Elle voulait jouer au cabaret
+Objet;Un énorme coffre;Instrument;Une grosse caisse
+Objet;Un plateau de mélange;Studio;Une table de mixage
+Chanson;Le college a commencé;Sheila;L'école est finie
+Chanson;Minotier, tu te reveilles;pour enfants;Meunier, tu dors
+Chanson;Les tangos de Prague;Francois Feldman;Les valses de Vienne
+Dessin animé;La grande alarme;Disney;La petite sirène
+Chanson;Croque lui 3 béliers;Mylen Farmer;Dessine moi un mouton
+Chanson;Aventure Europe;Yannick Noah;Saga Africa
+Chanson;Carreau de Valseur;Julien Clerc;Cœur de Rocker
+Télevision;Les défaites de la chanson;Trophées;Les victoires de la musique
+Chanson;La farandole des oies;J.J. Lionel;La danse des canards
+Chanson;C'est mauvais contre le physique;La compagnie créole;C'est bon pour le moral
+Chanson;Fermez la prison aux volatiles;Pierre Perret;Ouvrez la cage aux oiseaux
+Chanson;Le tigre est né ce matin;Henri Slvador;Le lion est mort ce soir
+Chanson;Lorsque tu regardes ses oreilles;Dany Brillant;Quand je vois tes yeux
+Chanson;Avale Le;Billy Ze Kick;Mangez-moi
+Chanson;Un meme univers;Telephone;Un autre monde
+Emission Télé;A la decouvert de la vieille groupie;Benjamin Castaldi;A la recherche de la nouvelle star
+Musique classique;Le haine devient bébé du Tyrol;Carmen;L'amour est enfant de Bohême
+Emission Télé;La classe des idoles;Jacques Martin;L'école des fans
+Chanson;Puisque vous partez de près;Corneille;Parce qu'on vient de loin
+Chanson;Infirmière Line, miss corbeau;Renaud;Docteur Renaud, mister renard
+Chanson;C'est où le malheur;Cali;C'est quand le bonheur
+Chanson;La chroégraphie des journaux;Coin Coin;La danse des canards
+Chanson;Ton type pour toi;Patricia Kass;Mon mec à moi
+Chanson;Lorsque l'air est mauvais;Jean-Jacques Goldman;Quand la musique est bonne
+Groupe;Le regiment Martiniquais;Groupe;La compagnie Créole
+Chanson;Grande maman Pâques;Tino Rossi;Petit papa noël
+Musique classique;Bise-amande;Tchaikovski;Casse-noisette
+Chanson;Telle une tornade;Stéphanie de Monaco;Comme un ouragan
+Chanson;La haine au rivage;Niagara;L'amour à la plage
+Chanson;Sous l'aqueduc de Nimes;Comptine;Sur le pont d'Avignon
+Chanson;Ca vole contre toi;Plastic Bertrand;Ca plane pour moi
+Chanson;Tu souhaites de l'ombre;Au p'tit bonheur;Je veux du soleil
+Chanson;Quand tu auras une scie;Claude Francois;Si j'avais un marteau
+Chanson;Rien Brutalement;Bibie;Tout doucement
+Chanson;La période des églises;Notre-Dame de Paris;Le temps des cathédrales
+Chanson;Ignorer detester;Florent Pagny;Savoir aimer
+Chanson;Les pupilles fusil;Marc Lavoine;Les yeux revolver
+Chanson;Tu détestes mater les mecs;Patrick Courtin;J'aime regarder les filles
+Chanson;La saison des fraises;Jean-Baptiste Clément;Le temps des cerises
+Chanson;Rude Espagne;Charles Trenet;Douce France
+Chanson;Madame parle de Jazz;Patricia Kass;Mademoiselle chante le blues
+Chanson;Pouvons nous déterrer les poireaux ?;Pour les enfants;Savez-vous planter les choux ?
+Chanson;Le dimanche sous la pluie;Claude Francois;Le lundi au soleil
+Chanson;Jim le bus;Vanessa Paradis;Joe le Taxi
+Chanson;Peinture Grenadine au vin;Eddy Mitchell;Couleur Menthe a l'eau
+Chanson;Reste ici;MC Solaar;Bouge de là
+Chanson;Tonton Diabolo;Annie Cordy;Tata Yoyo
+Chanson;Les blondes calculent pas contre des mirabelles;Lio;Les brunes comptent pas pour des prunes
+Salle de spectacle;Le Petit Tyrannosaure;Concerts;Le Grand Rex
+Chanson;Journée de Tranquilité;Début de soirée;Nuit de folie
+Chanson;Si je désire t'experimenter;Florent Pagny;Si tu veux m'essayer
+Chanson;Ta fille ta guerre;Daniel Balavoine;Mon fils ma bataille
+Chanson;Détestere a gagner la folie;Jean Ferrat;Aimer à perdre la raison
+Chanson;Lorsque l'on revient de la campagne;Daniel Balavoine;Quand on arrive en ville
+Chanson;Pile à l'océan;Calogero;Face à la mere
+Chanson;Rappeuse de rubis;Catherine Lara;Rockeuse de diamants
+Chanson;J'ai toujours songé à lui;Il était une fois;J'ai encore revé d'elle
+Chanson;L'univers est pierre;Starmania;Le monde est stone
+Chanson;Espérons qu'ils existent rugueux;Mylene Farmer;Pourvu qu'elles soient douces
+Chanson;Afin qu'il t'adore toujours;Céline Dion;Pour que tu m'aimes encore
+Chanson;Il déteste l'amour sur Terre;Philippe Lavil;Elle préfère l'amour en mer
+Chanson;Etourdissement de la haine;Alain Bashung;Vertige de l'amour
