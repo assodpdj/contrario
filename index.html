@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contrario Premium</title>
 
 <style>
@@ -18,27 +19,29 @@ body {
     color: white;
 }
 
-/* HEADER */
+/* ✅ HEADER FIX */
 .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 20px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
 }
 
 .logo {
-    height: 55px;
-    margin-right: 15px;
+    height: 110px;
 }
 
 .title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     opacity: 0.9;
+    text-align: center;
+    flex: 1;
 }
 
-/* CONTAINER */
+/* ✅ CONTAINER */
 .container {
     max-width: 900px;
     margin: auto;
@@ -46,37 +49,33 @@ body {
     text-align: center;
 }
 
-/* CARD */
+/* ✅ CARD */
 .card {
     margin-top: 25px;
     padding: 30px;
     border-radius: 18px;
     background: rgba(255,255,255,0.06);
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    transition: 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* TEXT */
+/* ✅ THEME (plus visible) */
 .theme {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 8px 16px;
     background: var(--primary);
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
+/* ✅ ENIGME (BEAUCOUP PLUS GROS) */
 .enigme {
-    font-size: 26px;
-    font-weight: 600;
-    margin: 15px 0;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
 }
 
-/* BUTTONS */
+/* ✅ BOUTONS */
 button {
     border: none;
     padding: 12px 18px;
@@ -90,39 +89,29 @@ button {
 .btn-main { background: var(--primary); color: white; }
 .btn-indice { background: var(--warning); color: white; }
 .btn-reponse { background: var(--secondary); color: white; }
-.btn-reset { background: #ef4444; color: white; }
 
 button:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
-/* INFO */
+/* ✅ INFO */
 .info {
     margin-top: 15px;
-    font-size: 18px;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: 0.3s;
+    font-size: 20px;
 }
 
-.info.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* HISTORY */
+/* ✅ HISTO */
 .history {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
 }
 
 th, td {
-    padding: 10px;
+    padding: 8px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -134,15 +123,18 @@ th {
 
 <body>
 
+<!-- ✅ HEADER AVEC 2 LOGOS -->
 <div class="header">
     <img src="logo-dpdj.png" class="logo">
-    <div class="title">Des Pneus & Des Jeux - Contrario</div>
+
+    <div class="title">Contrario</div>
+
+    <img src="contrario.png" class="logo">
 </div>
 
 <div class="container">
 
     <button class="btn-main" onclick="nouvelleEnigme()">🎲 Nouvelle énigme</button>
-    <button class="btn-reset" onclick="resetGame()">♻️ Reset</button>
 
     <div class="card">
         <div id="theme" class="theme"></div>
@@ -174,34 +166,24 @@ th {
 
 </div>
 
+<script src="data.js"></script>
+
 <script>
 
-let data = [];
 let used = [];
 let current = null;
 
-// Load data
-fetch('data_inputs.txt')
-.then(r => r.text())
-.then(text => {
-    data = text.split('\n').slice(1).map(l => {
-        let p = l.split(';');
-        return { theme:p[0], enigme:p[1], indice:p[2], reponse:p[3] };
-    });
-
-    loadHistory();
-});
-
-// NEW QUESTION
 function nouvelleEnigme(){
-    if(used.length === data.length){
-        alert("Plus d'énigmes !");
+
+    if (used.length === data.length){
+        alert("Toutes les énigmes ont été utilisées !");
         return;
     }
 
     let i;
-    do { i = Math.floor(Math.random()*data.length); }
-    while(used.includes(i));
+    do {
+        i = Math.floor(Math.random()*data.length);
+    } while (used.includes(i));
 
     used.push(i);
     current = data[i];
@@ -209,61 +191,29 @@ function nouvelleEnigme(){
     theme.innerText = current.theme;
     enigme.innerText = current.enigme;
 
-    resetInfo();
-}
-
-// SHOW INDICE
-function showIndice(){
-    indice.innerText = "🔍 " + current.indice;
-    indice.classList.add("show");
-}
-
-// SHOW REPONSE
-function showReponse(){
-    reponse.innerText = "✅ " + current.reponse;
-    reponse.classList.add("show");
-
-    addHistory(current);
-    saveHistory();
-}
-
-// RESET UI INFO
-function resetInfo(){
-    indice.classList.remove("show");
-    reponse.classList.remove("show");
     indice.innerText = "";
     reponse.innerText = "";
 }
 
-// HISTORY
+function showIndice(){
+    if(current){
+        indice.innerText = "🔍 " + current.indice;
+    }
+}
+
+function showReponse(){
+    if(current){
+        reponse.innerText = "✅ " + current.reponse;
+        addHistory(current);
+    }
+}
+
 function addHistory(item){
     let row = historyTable.querySelector("tbody").insertRow();
-
     row.insertCell(0).innerText = item.theme;
     row.insertCell(1).innerText = item.enigme;
     row.insertCell(2).innerText = item.indice;
     row.insertCell(3).innerText = item.reponse;
-}
-
-// STORAGE
-function saveHistory(){
-    let rows = [...document.querySelectorAll("#historyTable tbody tr")];
-    let hist = rows.map(r => [...r.cells].map(c => c.innerText));
-    localStorage.setItem("contrario_history", JSON.stringify(hist));
-}
-
-function loadHistory(){
-    let hist = JSON.parse(localStorage.getItem("contrario_history") || "[]");
-    hist.forEach(r => {
-        let row = historyTable.querySelector("tbody").insertRow();
-        r.forEach(c => row.insertCell().innerText = c);
-    });
-}
-
-// RESET GAME
-function resetGame(){
-    localStorage.clear();
-    location.reload();
 }
 
 </script>
