@@ -166,24 +166,34 @@ th {
 
 </div>
 
-<script src="data.js"></script>
-
 <script>
 
+let data = [];
 let used = [];
 let current = null;
 
-function nouvelleEnigme(){
+// Load data
+fetch('data_inputs.txt')
+.then(r => r.text())
+.then(text => {
+    data = text.split('\n').slice(1).map(l => {
+        let p = l.split(';');
+        return { theme:p[0], enigme:p[1], indice:p[2], reponse:p[3] };
+    });
 
-    if (used.length === data.length){
-        alert("Toutes les énigmes ont été utilisées !");
+    loadHistory();
+});
+
+// NEW QUESTION
+function nouvelleEnigme(){
+    if(used.length === data.length){
+        alert("Plus d'énigmes !");
         return;
     }
 
     let i;
-    do {
-        i = Math.floor(Math.random()*data.length);
-    } while (used.includes(i));
+    do { i = Math.floor(Math.random()*data.length); }
+    while(used.includes(i));
 
     used.push(i);
     current = data[i];
@@ -191,8 +201,7 @@ function nouvelleEnigme(){
     theme.innerText = current.theme;
     enigme.innerText = current.enigme;
 
-    indice.innerText = "";
-    reponse.innerText = "";
+    resetInfo();
 }
 
 function showIndice(){
