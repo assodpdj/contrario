@@ -86,7 +86,7 @@ Chanson;Ton type pour toi;Patricia Kass;Mon mec à moi
 Chanson;Lorsque l'air est mauvais;Jean-Jacques Goldman;Quand la musique est bonne
 Groupe;Le regiment Martiniquais;Groupe;La compagnie Créole
 Chanson;Grande maman Pâques;Tino Rossi;Petit papa noël
-Musique classique;Bise-amande;Tchaikovski;Casse-noisette
+Musique classique;Brise-amande;Tchaikovski;Casse-noisette
 Chanson;Telle une tornade;Stéphanie de Monaco;Comme un ouragan
 Chanson;La haine au rivage;Niagara;L'amour à la plage
 Chanson;Sous l'aqueduc de Nimes;Comptine;Sur le pont d'Avignon
